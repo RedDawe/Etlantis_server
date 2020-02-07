@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>Etlantis</title>
+    <style type="text/css">
+        #main_text {
+            width: 50%;
+            margin-top:150px;
+            margin-bottom:70px;
+            position: relative;
+            left: 25%;
+            font-family: "Lucida Console";
+            font-size: 23px;
+        }
+        #main_picture {
+            width: 25%;
+            left: 45%;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <img id="whitelogo" src="static/white o logo.png"><div id="menu"><a class="a_menu" href="/">Daily Route Optimizer</a><a class="a_menu" href="/grade_calculator">Grade Calculator</a><a href="all_knowing_mirror" class="a_menu" >All knowing mirror</a><a href="/read_for_me" class="a_menu" >Read For Me</a></div>
+    <p id="main_text">{{app_name}} is our Google Assistant app. Just open up your Google Assistant by saying "Hey Google" and tell him to "Talk to {{app_name}}"</p>
+    <img id="main_picture" src="static/{{app_name}} ICON.png">
+</body>
+</html>

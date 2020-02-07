@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/react_01/css/main.5ac45cbe.chunk.css",
+    "main.js": "/static/react_01/js/main.8125fda4.chunk.js",
+    "main.js.map": "/static/react_01/js/main.8125fda4.chunk.js.map",
+    "runtime-main.js": "/static/react_01/js/runtime-main.af03473e.js",
+    "runtime-main.js.map": "/static/react_01/js/runtime-main.af03473e.js.map",
+    "js/2.28e525e3.chunk.js": "/static/react_01/js/2.28e525e3.chunk.js",
+    "js/2.28e525e3.chunk.js.map": "/static/react_01/js/2.28e525e3.chunk.js.map",
+    "../../templates/gc.html": "/static/react_01/../../templates/gc.html",
+    "css/main.5ac45cbe.chunk.css.map": "/static/react_01/css/main.5ac45cbe.chunk.css.map",
+    "js/2.28e525e3.chunk.js.LICENSE.txt": "/static/react_01/js/2.28e525e3.chunk.js.LICENSE.txt",
+    "media/play_store_logo.png": "/static/react_01/media/play_store_logo.b4c508ba.png",
+    "precache-manifest.68904b0fac558d14d4883b0b2b4c93b2.js": "/static/react_01/precache-manifest.68904b0fac558d14d4883b0b2b4c93b2.js",
+    "service-worker.js": "/static/react_01/service-worker.js"
+  },
+  "entrypoints": [
+    "js/runtime-main.af03473e.js",
+    "js/2.28e525e3.chunk.js",
+    "css/main.5ac45cbe.chunk.css",
+    "js/main.8125fda4.chunk.js"
+  ]
+}

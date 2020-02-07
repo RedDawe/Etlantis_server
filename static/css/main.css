@@ -1,0 +1,57 @@
+        #menu {
+            padding: 0px;
+            margin: 0px;
+            left: 0px;
+            z-index: 1;
+            position: fixed;
+            top:0px;
+            background: grey;
+            height:40px;
+            width:100%;
+            font-size:18px;
+            font-family: "Century Gothic";
+        }
+        .a_menu {
+            padding: 5px;
+            top:9px;
+            margin: 10px;
+            //background: #f5f2f2;
+            color: #f5f2f2;
+            text-decoration: none;
+            position:relative;
+            left:30%;
+        }
+        #github_link{
+            position: relative;
+            width:10%;
+            left:45%;
+    }
+    #whitelogo {
+        position: fixed;
+        width: 40px;
+        top: 9px;
+        left: 20px;
+        z-index:2;
+    }
+    @media screen and (orientation:portrait) {
+         #menu {
+            height:30px;
+            font-size:12px;
+            text-align: center;
+        }
+         .a_menu {
+            padding: 1px;
+            top:3px;
+            margin: 3px;
+            left:3%;
+            display:inline-block;
+        }
+         #whitelogo {
+            display:none;
+    }
+    }
+    @media screen and (max-width: 439px) {
+         #menu {
+            height:55px;
+        }
+    }

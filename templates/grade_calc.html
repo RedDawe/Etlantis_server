@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon">
+    <title>Etlantis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <style type="text/css">
+        /* Portrait */
+        @media screen and (orientation:portrait) {
+         #main_picture {
+            width: 90%;
+            position: relative;
+            left: 5%;
+            margin-top: 130px;
+        }
+        }
+        /* Landscape */
+        @media screen and (orientation:landscape) {
+         #main_picture {
+            width: 50%;
+            position: relative;
+            left: 25%;
+            margin-top: 130px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <img id="whitelogo" src="static/white o logo.png"><div id="menu"><a class="a_menu" href="/">Daily Route Optimizer</a><a class="a_menu" href="/grade_calculator">Grade Calculator</a><a href="all_knowing_mirror" class="a_menu" >All knowing mirror</a><a href="/read_for_me" class="a_menu" >Read For Me</a></div>
+    <a href="https://play.google.com/store/apps/details?id=etlantis.gradecalculator"><img id="main_picture" src="static/ad.png" /></a>
+    <br>
+    <a href="https://github.com/RedDawe/GradeCalculator"><img id="github_link" src="static/githublogo.png" /></a>
+</body>
+</html>
