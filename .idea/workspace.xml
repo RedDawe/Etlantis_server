@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6a109ad-cc49-4159-89a8-3e0e94111e28" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gc-app/config/env.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gc-app/config/jest/cssTransform.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gc-app/config/jest/fileTransform.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gc-app/config/modules.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gc-app/config/paths.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gc-app/config/pnpTs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gc-app/config/webpack.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gc-app/config/webpackDevServer.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gc-app/scripts/build.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gc-app/scripts/start.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gc-app/scripts/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gc-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/gc-app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gc-app/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/gc-app/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gc-app/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/gc-app/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gc-app/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/gc-app/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gc-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/gc-app/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gc-app/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/gc-app/yarn.lock" afterDir="false" />
-    </list>
+    <list default="true" id="e6a109ad-cc49-4159-89a8-3e0e94111e28" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +164,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

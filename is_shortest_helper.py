@@ -59,7 +59,7 @@ class is_shorterer ():
 
         headers = {
             'Accept': 'application/json, application/geo+json, application/gpx+xml, img/png; charset=utf-8',
-            'Authorization': ''
+            'Authorization': '5b3ce3597851110001cf62487f67dfb56a5641a4919b6ca5ec6c3cd2'
         }
         call = requests.post('https://api.openrouteservice.org/v2/directions/foot-walking', json=body, headers=headers)
 

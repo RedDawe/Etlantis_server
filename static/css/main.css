@@ -19,7 +19,7 @@
             color: #f5f2f2;
             text-decoration: none;
             position:relative;
-            left:30%;
+            left:calc(50% - 300px);
         }
         #github_link{
             position: relative;
@@ -35,14 +35,16 @@
     }
     @media screen and (orientation:portrait) {
          #menu {
-            height:30px;
-            font-size:12px;
+            height:auto;
+            font-size:3vw;
             text-align: center;
+            overflow: auto;
+            padding:1vw;
         }
          .a_menu {
             padding: 1px;
-            top:3px;
-            margin: 3px;
+            top:1px;
+            margin: 1vw;
             left:3%;
             display:inline-block;
         }

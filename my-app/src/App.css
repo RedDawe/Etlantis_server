@@ -21,7 +21,7 @@
             top:9px;
             margin: 10px;
             position:relative;
-            left:30%;
+            left:calc(50%-300px);
         }
         #github_link{
             position: relative;
@@ -30,29 +30,32 @@
             margin-top:10%;
             height: auto;
     }
-        p{
+        .desktop_layout_p{
             position:relative;
-            margin-top:300px;
-            margin-bot:300px;
+            margin-top:17vw;
+            margin-bot:17vw;
             left:15%;
             width:30%;
+            font-size:0.8vw;
         }
-        #phone_layout_p{
+        .phone_layout_p{
+            position:relative;
+            left:15%;
             width:70%;
             margin-top:50px;
             margin-bot:50px;
         }
         img{
             position: fixed;
-            left: 60%;
-            width: 300px;
-            top: 120px;
-            height:620px;
+            left: 61%;
+            width: 12vw;
+            top: 6.2vw;
+            height:27vw;
         }
         #frame{
-            top: 100px;
-            left: 59%;
-            width: 330px;
+            top: 5.5vw;
+            left: 60%;
+            width: 14vw;
             height: auto;
         }
         div{

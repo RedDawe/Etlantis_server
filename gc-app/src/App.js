@@ -9,7 +9,7 @@ const TITLE = 'Etlantis'
 class App extends React.Component {
     constructor(){
         super();
-        this.state = {mobile : window.innerWidth < window.innerHeight, average: 0, grades: "Grades", weights: "Weights"};
+        this.state = {mobile : window.innerWidth < window.innerHeight, average: 0, grades: "2 1 2.5 1", weights: "1 2 1 1"};
 
         this.handleGradeChange = this.handleGradeChange.bind(this);
         this.handleWeightsChange = this.handleWeightsChange.bind(this);
@@ -67,7 +67,7 @@ class App extends React.Component {
             <Helmet>
               <title>{ TITLE }</title>
             </Helmet>
-            <img id="whitelogo" src="static/white o logo.png"/><div id="menu"><a class="a_menu" href="/">Daily Route Optimizer</a><a class="a_menu" href="/grade_calculator">Grade Calculator</a><a href="all_knowing_mirror" class="a_menu" >All knowing mirror</a><a href="/read_for_me" class="a_menu" >Read For Me</a></div>
+            <img id="whitelogo" src="static/white o logo.png"/><div id="menu"><a class="a_menu" href="/daily_route_optimizer">Daily Route Optimizer</a><a class="a_menu" href="/grade_calculator">Grade Calculator</a><a href="/all_knowing_mirror" class="a_menu" >All knowing mirror</a><a href="/read_for_me" class="a_menu" >Read For Me</a></div>
             <p id="main_text">
             Hey,<br></br>
             seems like you're in luck today. You're on a phone so you can get the full app by clicking the play store logo below.
@@ -84,13 +84,15 @@ class App extends React.Component {
             <Helmet>
               <title>{ TITLE }</title>
             </Helmet>
-            <img id="whitelogo" src="static/white o logo.png"/><div id="menu"><a class="a_menu" href="/">Daily Route Optimizer</a><a class="a_menu" href="/grade_calculator">Grade Calculator</a><a href="all_knowing_mirror" class="a_menu" >All knowing mirror</a><a href="/read_for_me" class="a_menu" >Read For Me</a></div>
+            <img id="whitelogo" src="static/white o logo.png"/><div id="menu"><a class="a_menu" href="/daily_route_optimizer">Daily Route Optimizer</a><a class="a_menu" href="/grade_calculator">Grade Calculator</a><a href="/all_knowing_mirror" class="a_menu" >All knowing mirror</a><a href="/read_for_me" class="a_menu" >Read For Me</a></div>
             <p id="main_p">
                 This is a preview page for the Grade Calculator app. You can get the full app by clicking the play store logo below.
             </p>
 
             <form onSubmit={this.grade_submit}>
+                <p class="labels">Grades</p>
                 <input type="text" value={this.state.grades} onChange={this.handleGradeChange}/>
+                <p class="labels">Weights</p>
                 <input type="text" value={this.state.weights} onChange={this.handleWeightsChange}/>
                 <input type="submit" value="Calculate" />
             </form>

@@ -11,6 +11,7 @@
     left: 41%;
     width: 20%;
     text-align: center;
+    font-size:0.85vw;
 }
 #result{
     text-align: center;
@@ -34,12 +35,20 @@ input{
   height: 30px;
   padding: 5px;
   padding-left: 10px;
-  font-size: 15px;
-  margin: 40px;
+  font-size: calc(10px + 0.3vw);
+  margin: 20px;
+  color: #b5b5b5;
 }
 input[type=submit]{
+  color: black;
   width: 10%;
-  left: 45%;
+  left: 46%;
+  height: calc(20px + 0.5vw);
+}
+.labels{
+    position: relative;
+    left: 28%;
+    font-size:calc(10px + 0.35vw);
 }
 #menu {
             padding: 0px;
@@ -64,7 +73,7 @@ input[type=submit]{
             top:9px;
             margin: 10px;
             position:relative;
-            left:30%;
+            left:calc(50%-300px);
         }
         #github_link{
             position: relative;
