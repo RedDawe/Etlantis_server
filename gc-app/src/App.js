@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import SanitizedHTML from 'react-sanitized-html';
 import { Helmet } from 'react-helmet'
 import psl from './play_store_logo.png'
 
@@ -9,7 +10,7 @@ const TITLE = 'Etlantis'
 class App extends React.Component {
     constructor(){
         super();
-        this.state = {mobile : window.innerWidth < window.innerHeight, average: 0, grades: "", weights: ""};
+        this.state = {mobile : window.innerWidth < window.innerHeight, average: 0, grades: "", weights: "", menu: "loading..."};
 
         this.handleGradeChange = this.handleGradeChange.bind(this);
         this.handleWeightsChange = this.handleWeightsChange.bind(this);
@@ -50,6 +51,9 @@ class App extends React.Component {
 
     componentDidMount() {
       window.addEventListener('resize', this.handleWindowSizeChange);
+      fetch('fetch/menu')
+        .then(response => response.text())
+        .then(menu => this.setState({menu}));
     }
 
     componentDidUnmount() {
@@ -67,7 +71,7 @@ class App extends React.Component {
             <Helmet>
               <title>{ TITLE }</title>
             </Helmet>
-            <img id="whitelogo" src="static/white o logo.png"/><div id="menu"><a class="a_menu" href="/daily_route_optimizer">Daily Route Optimizer</a><a class="a_menu" href="/grade_calculator">Grade Calculator</a><a href="/all_knowing_mirror" class="a_menu" >All knowing mirror</a><a href="/read_for_me" class="a_menu" >Read For Me</a></div>
+            <SanitizedHTML allowedAttributes={{ 'a': ['href', 'class'], 'div': ['id'], 'img': ['id', 'src'] }} allowedTags={['a', 'div', 'img']} html={ this.state.menu } />
             <p id="main_text">
             Hey,<br></br>
             seems like you're in luck today. You're on a phone so you can get the full app by clicking the play store logo below.
@@ -84,7 +88,7 @@ class App extends React.Component {
             <Helmet>
               <title>{ TITLE }</title>
             </Helmet>
-            <img id="whitelogo" src="static/white o logo.png"/><div id="menu"><a class="a_menu" href="/daily_route_optimizer">Daily Route Optimizer</a><a class="a_menu" href="/grade_calculator">Grade Calculator</a><a href="/all_knowing_mirror" class="a_menu" >All knowing mirror</a><a href="/read_for_me" class="a_menu" >Read For Me</a></div>
+            <SanitizedHTML allowedAttributes={{ 'a': ['href', 'class'], 'div': ['id'], 'img': ['id', 'src'] }} allowedTags={['a', 'div', 'img']} html={ this.state.menu } />
             <p id="main_p">
                 This is a preview page for the Grade Calculator app. You can get the full app by clicking the play store logo below.
             </p>

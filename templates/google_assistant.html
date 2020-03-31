@@ -23,8 +23,17 @@
     </style>
 </head>
 <body>
-    <img id="whitelogo" src="static/white o logo.png"/><div id="menu"><a class="a_menu" href="/daily_route_optimizer">Daily Route Optimizer</a><a class="a_menu" href="/grade_calculator">Grade Calculator</a><a href="/all_knowing_mirror" class="a_menu" >All knowing mirror</a><a href="/read_for_me" class="a_menu" >Read For Me</a></div>
+    <div id="menu_wrapper"></div>
     <p id="main_text">{{app_name}} is our Google Assistant app. Just open up your Google Assistant by saying "Hey Google" and tell him to "Talk to {{app_name}}"</p>
     <img id="main_picture" src="static/{{app_name}} ICON.png">
 </body>
+<script>
+    fetch('fetch/menu')
+    .then(function (response) {
+      return response.text();
+    })
+    .then(function (menu) {
+      document.getElementById("menu_wrapper").innerHTML = menu;
+    });
+</script>
 </html>

@@ -113,13 +113,17 @@ def backend_delete_encrypted():
     return 'U gotta do what u gotta do ;('
 
 @app.route('/backend/is_shortest_encrypted', methods = ['POST'])
-def backend_isshortest_encrypted():
+def backend_is_shortest_encrypted():
     data_str = request.form["data_str"]
     data_str = encryptor.decrypt(data_str)
     data_str = helper.main(data_str)
     data_str = encryptor.encrypt(data_str)
     return data_str
 
+@app.route('/fetch/menu')
+def fetch_menu():
+    with open('templates/menu.html', 'r') as f:
+        return f.read()
 
 if __name__ == "__main__":
     app.run()
