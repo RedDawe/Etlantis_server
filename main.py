@@ -8,7 +8,7 @@ use_google_places = False
 distance_to = 50
 preprocessor = preprocessor(distance_to = distance_to, use_google_places = use_google_places)
 helper = is_shorterer(preprocessor = preprocessor, same_place_meter_threshold = 50, a_place_repetitions_threshold = 2, shortest_path_percent_tolerance = 0.9, use_google_places=use_google_places, distance_to = distance_to, use_ml=True, recording_every_x_minutes = 5)
-encryptor = AESCipher(key='')
+encryptor = AESCipher(key='McQfTjWnZr4u7x!A%D*F-JaNdRgUkXp2')
 
 app = Flask(__name__)
 

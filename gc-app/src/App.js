@@ -9,7 +9,7 @@ const TITLE = 'Etlantis'
 class App extends React.Component {
     constructor(){
         super();
-        this.state = {mobile : window.innerWidth < window.innerHeight, average: 0, grades: "2 1 2.5 1", weights: "1 2 1 1"};
+        this.state = {mobile : window.innerWidth < window.innerHeight, average: 0, grades: "", weights: ""};
 
         this.handleGradeChange = this.handleGradeChange.bind(this);
         this.handleWeightsChange = this.handleWeightsChange.bind(this);
@@ -91,9 +91,9 @@ class App extends React.Component {
 
             <form onSubmit={this.grade_submit}>
                 <p class="labels">Grades</p>
-                <input type="text" value={this.state.grades} onChange={this.handleGradeChange}/>
+                <input type="text" value={this.state.grades} onChange={this.handleGradeChange} placeholder="2 1 2.5 1"/>
                 <p class="labels">Weights</p>
-                <input type="text" value={this.state.weights} onChange={this.handleWeightsChange}/>
+                <input type="text" value={this.state.weights} onChange={this.handleWeightsChange} placeholder="1 2 1 1"/>
                 <input type="submit" value="Calculate" />
             </form>
 

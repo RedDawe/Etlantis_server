@@ -9,7 +9,7 @@ class preprocessor():
 
     def main(self, lat=0, long=0, big_lat=0, big_long=0, small_lat=0, small_long=0):
         if self.use_google_places:
-            API_KEY = ''
+            API_KEY = 'AIzaSyB93PMgXDnZcwJcwnNPwzxS6fifGLhXR14'
 
             # Define the Client
             gmaps = googlemaps.Client(key=API_KEY)
@@ -32,7 +32,7 @@ class preprocessor():
 
             headers = {
                 'Accept': 'application/json, application/geo+json, application/gpx+xml, img/png; charset=utf-8',
-                'Authorization': ''
+                'Authorization': '5b3ce3597851110001cf62487f67dfb56a5641a4919b6ca5ec6c3cd2'
             }
             call = requests.post('https://api.openrouteservice.org/pois', json=body, headers=headers)
 

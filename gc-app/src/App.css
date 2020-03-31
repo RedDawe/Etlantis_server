@@ -25,6 +25,9 @@
     left: 42%;
     margin-top: 140px;
 }
+::placeholder {
+  color: #b5b5b5;
+}
 input{
   position: relative;
   display: block;
@@ -37,7 +40,7 @@ input{
   padding-left: 10px;
   font-size: calc(10px + 0.3vw);
   margin: 20px;
-  color: #b5b5b5;
+  color: grey;
 }
 input[type=submit]{
   color: black;
